@@ -5,20 +5,49 @@
 
     <head>
 
-        <title>Home</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>
+            Beneficiary
+        </title>
 
         <!-- CSS Links -->
         <link rel="stylesheet" href="{% static "/style/home.css" %}">
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
 
         <!-- Script Link -->
         <script src="{% static "/script/home.js" %}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     </head>
 
     <body>
 
-        <h1 id="header">Welcome</h1>        
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">
+                <img src="{% static "/assets/navimg.svg" %}" 
+                width="30" height="30" class="d-inline-block align-top" alt="h">
+                Beneficiary
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navItems" aria-controls="navItems" aria-expanded="false" 
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navItems">
+                <div class="navbar-nav"></div>
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="/">Contact Us</a>
+                </div>
+            </div>
+        </nav>
     
     </body>
 

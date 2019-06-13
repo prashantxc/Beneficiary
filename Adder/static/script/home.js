@@ -1,8 +1,11 @@
 window.onload = function() {
 
-    var header = document.getElementById('header');
-    header.addEventListener('click', function() {
-        header.innerHTML = 'Updated'
+    $(function(){
+
+        $('.navbar-toggler').click(function(event){
+            $('.navbar-collapse').toggle(500);
+        });
+
     });
 
 }
