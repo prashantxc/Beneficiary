@@ -1,3 +1,16 @@
-h1 {
-    color: red;
+/* NavBar */
+.nav-item {
+    opacity: 0.7;
+}
+
+/* Central Body */
+#heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+
+/* Utils */
+.extra-white-space {
+    margin: 1em;
 }
