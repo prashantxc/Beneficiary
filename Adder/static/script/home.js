@@ -24,7 +24,20 @@ window.onload = function() {
             showList(selectedData);
         });
 
-        
+        function showList(ministryName) {
+            $.ajax({
+                url: 'peoplecall/',
+                type: 'POST',
+                data: {data: ministryName},
+                success: function(data, status, xhr) {
+                    console.log(data);
+                },
+                error: function(data, status, xhr) {
+                    console.log(data);
+                }
+                
+            });
+        }
 
     });
 

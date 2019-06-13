@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from Adder.views import *
+from Adder import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Ministry),
+    path('', views.Ministry),
+    path('peoplecall/', views.peopleCall),
 ]
